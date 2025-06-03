@@ -1,0 +1,69 @@
+.favoritos-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.favoritos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.favoritos-header h1 {
+  color: #2563eb;
+  margin: 0;
+}
+
+.btn-limpiar {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-limpiar:hover {
+  background-color: #bb2d3b;
+}
+
+.favoritos-vacio {
+  text-align: center;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.btn-explorar {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-explorar:hover {
+  background-color: #1d4ed8;
+}
+
+.favoritos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.favorito-item {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.favorito-item:hover {
+  transform: translateY(-5px);
+} 

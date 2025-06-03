@@ -1,0 +1,141 @@
+.buscar-pagina {
+  padding: 2rem 0;
+  min-height: calc(100vh - 200px);
+  background-color: #f8f9fa;
+}
+
+.seccion-buscador {
+  margin-bottom: 3rem;
+}
+
+.seccion-titulo {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.seccion-resultados {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.resultados-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.resultados-header h2 {
+  font-size: 1.75rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin: 0;
+}
+
+.resultados-header p {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.propiedades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.error-contenedor,
+.cargando-contenedor,
+.sin-resultados {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin: 2rem 1rem;
+}
+
+.error-mensaje {
+  color: #dc3545;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.cargando-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4a90e2;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.sin-resultados p {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .buscar-pagina {
+    padding: 1.5rem 0;
+  }
+
+  .seccion-titulo {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .propiedades-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .buscar-pagina {
+    padding: 1rem 0;
+  }
+
+  .seccion-titulo {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .resultados-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .propiedades-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 0.5rem;
+  }
+
+  .error-contenedor,
+  .cargando-contenedor,
+  .sin-resultados {
+    margin: 1rem;
+    padding: 2rem 1rem;
+  }
+} 

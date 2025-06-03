@@ -1,0 +1,133 @@
+.comparar-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.comparar-header {
+  margin-bottom: 2rem;
+}
+
+.comparar-header h1 {
+  color: #2563eb;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.seleccion-favoritos h3 {
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+}
+
+.favoritos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.favorito-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.favorito-card:hover {
+  transform: translateY(-5px);
+}
+
+.favorito-card.seleccionada {
+  border: 3px solid #2563eb;
+  transform: scale(1.02);
+}
+
+.comparacion-container {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.comparacion-container h3 {
+  color: #1e293b;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.comparacion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.comparacion-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.comparacion-card:hover {
+  transform: translateY(-5px);
+}
+
+.comparacion-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.comparacion-card h4 {
+  padding: 1rem;
+  margin: 0;
+  color: #2563eb;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.detalles-comparacion {
+  padding: 1rem;
+}
+
+.detalles-comparacion p {
+  margin: 0.5rem 0;
+  color: #64748b;
+}
+
+.detalles-comparacion strong {
+  color: #1e293b;
+  margin-right: 0.5rem;
+}
+
+.no-favoritos {
+  text-align: center;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.btn-explorar {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-explorar:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+  .comparacion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparar-container {
+    padding: 0 1rem;
+  }
+} 
